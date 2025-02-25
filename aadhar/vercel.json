@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "aadhar/main.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/extract-aadhaar-data/(.*)",
+        "dest": "aadhar/main.py"
+      }
+    ]
+  }
+  
